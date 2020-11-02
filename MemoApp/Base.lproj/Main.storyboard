@@ -1,24 +1,141 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Gxp-Q8-fbp">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--メモ入力-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MemoInputViewController" customModule="MemoApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TGC-e6-uny">
+                                <rect key="frame" x="63" y="378" width="248" height="56"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="TGC-e6-uny" secondAttribute="height" multiplier="31:7" id="pKj-aE-o1l"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="保存">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iex-ZM-7Hy">
+                                <rect key="frame" x="16" y="213" width="343" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="iex-ZM-7Hy" secondAttribute="height" multiplier="343:26" constant="-408.96153846153845" id="Bai-zH-axB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="タイトル" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FEN-cU-Wyy">
+                                <rect key="frame" x="16" y="144" width="96" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="FEN-cU-Wyy" secondAttribute="height" multiplier="28:11" constant="12" id="w3T-KC-Bmj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="iex-ZM-7Hy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="E8g-E1-8XH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FEN-cU-Wyy" secondAttribute="trailing" constant="263" id="Vr7-hj-fjr"/>
+                            <constraint firstItem="iex-ZM-7Hy" firstAttribute="top" secondItem="FEN-cU-Wyy" secondAttribute="bottom" constant="36" id="WEI-4l-erM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TGC-e6-uny" secondAttribute="trailing" constant="64" id="Yxn-oW-LNH"/>
+                            <constraint firstItem="FEN-cU-Wyy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="bK0-pG-yko"/>
+                            <constraint firstItem="FEN-cU-Wyy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="56" id="dNP-W6-1Ok"/>
+                            <constraint firstItem="TGC-e6-uny" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="63" id="kOX-S7-ReA"/>
+                            <constraint firstItem="TGC-e6-uny" firstAttribute="top" secondItem="iex-ZM-7Hy" secondAttribute="bottom" constant="108" id="py1-jT-iX9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iex-ZM-7Hy" secondAttribute="trailing" constant="16" id="rRn-TK-zRP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TGC-e6-uny" secondAttribute="bottom" constant="344" id="teJ-u3-viQ"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="メモ入力" id="vtX-88-73j"/>
+                    <connections>
+                        <outlet property="saveButton" destination="TGC-e6-uny" id="Ecb-V1-OxR"/>
+                        <outlet property="titleTextField" destination="iex-ZM-7Hy" id="5G0-fD-hdV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="292" y="89.408866995073893"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="rAC-IJ-IyO">
+            <objects>
+                <navigationController id="Gxp-Q8-fbp" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="QPx-bK-Qhb">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="DTf-tf-XOa" kind="relationship" relationship="rootViewController" id="4T0-rO-gHc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7tp-PV-REy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1552" y="90"/>
+        </scene>
+        <!--メモ一覧-->
+        <scene sceneID="Ope-Si-1Jj">
+            <objects>
+                <collectionViewController id="DTf-tf-XOa" customClass="MemoCollectionViewController" customModule="MemoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="ufQ-Lw-np5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ndb-8B-j7P">
+                            <size key="itemSize" width="375" height="80"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="yCY-pU-brw">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="xZA-Tu-mks">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </collectionViewCellContentView>
+                                <size key="customSize" width="375" height="80"/>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="DTf-tf-XOa" id="oVq-tg-vSz"/>
+                            <outlet property="delegate" destination="DTf-tf-XOa" id="fco-js-6LI"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="メモ一覧" id="iSp-fh-Oii">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Lk6-3Z-8AM">
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="show" id="tKh-Du-e6b"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="svy-9Z-trk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-642.39999999999998" y="88.669950738916256"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

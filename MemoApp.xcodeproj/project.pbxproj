@@ -19,8 +19,8 @@
 		F428FC4E2549131700E0CFB2 /* MemoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F428FC4D2549131700E0CFB2 /* MemoAppTests.swift */; };
 		F428FC592549131700E0CFB2 /* MemoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F428FC582549131700E0CFB2 /* MemoAppUITests.swift */; };
 		F42FE711254BDC92006739D3 /* MemoDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F42FE70F254BDC92006739D3 /* MemoDataModel.xcdatamodeld */; };
+		F46E16C82552831000AB991A /* MemoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46E16C72552831000AB991A /* MemoTableViewController.swift */; };
 		F4897D212549397000B0DE54 /* MemoInputViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4897D202549397000B0DE54 /* MemoInputViewModel.swift */; };
-		F4897D29254941EB00B0DE54 /* MemoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4897D28254941EB00B0DE54 /* MemoCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,8 +60,8 @@
 		F428FC582549131700E0CFB2 /* MemoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoAppUITests.swift; sourceTree = "<group>"; };
 		F428FC5A2549131700E0CFB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F42FE710254BDC92006739D3 /* MemoDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MemoDataModel.xcdatamodel; sourceTree = "<group>"; };
+		F46E16C72552831000AB991A /* MemoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoTableViewController.swift; sourceTree = "<group>"; };
 		F4897D202549397000B0DE54 /* MemoInputViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoInputViewModel.swift; sourceTree = "<group>"; };
-		F4897D28254941EB00B0DE54 /* MemoCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoCollectionViewController.swift; sourceTree = "<group>"; };
 		FBC4DB054F2B0627BC907B33 /* Pods-MemoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MemoApp.debug.xcconfig"; path = "Target Support Files/Pods-MemoApp/Pods-MemoApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,7 +111,7 @@
 		F41E86FA2549589300EEEF8B /* MemoCollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				F4897D28254941EB00B0DE54 /* MemoCollectionViewController.swift */,
+				F46E16C72552831000AB991A /* MemoTableViewController.swift */,
 				F41E86FF2549598800EEEF8B /* MemoCollectionViewModel.swift */,
 			);
 			path = MemoCollectionView;
@@ -359,10 +359,10 @@
 			files = (
 				F428FC3B2549131600E0CFB2 /* MemoInputViewController.swift in Sources */,
 				F42FE711254BDC92006739D3 /* MemoDataModel.xcdatamodeld in Sources */,
+				F46E16C82552831000AB991A /* MemoTableViewController.swift in Sources */,
 				F4897D212549397000B0DE54 /* MemoInputViewModel.swift in Sources */,
 				F428FC372549131600E0CFB2 /* AppDelegate.swift in Sources */,
 				F428FC392549131600E0CFB2 /* SceneDelegate.swift in Sources */,
-				F4897D29254941EB00B0DE54 /* MemoCollectionViewController.swift in Sources */,
 				F41E86F62549555300EEEF8B /* MemoModel.swift in Sources */,
 				F41E87002549598800EEEF8B /* MemoCollectionViewModel.swift in Sources */,
 			);

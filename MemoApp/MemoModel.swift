@@ -10,7 +10,7 @@ import RealmSwift
 
     
     class MemoModel: Object {
-        @objc dynamic var title: String = ""
+        @objc dynamic var title: String = String()
         @objc dynamic var id: String = NSUUID().uuidString
         /// 作成日時
         @objc dynamic var createDate: Date = Date()

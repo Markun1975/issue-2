@@ -16,21 +16,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TGC-e6-uny">
-                                <rect key="frame" x="63" y="378" width="248" height="56"/>
-                                <color key="backgroundColor" systemColor="systemTealColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="TGC-e6-uny" secondAttribute="height" multiplier="31:7" id="pKj-aE-o1l"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <state key="normal" title="保存">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iex-ZM-7Hy">
-                                <rect key="frame" x="16" y="213" width="343" height="57"/>
+                                <rect key="frame" x="16" y="213" width="343" height="140"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="iex-ZM-7Hy" secondAttribute="height" multiplier="343:26" constant="-408.96153846153845" id="Bai-zH-axB"/>
+                                    <constraint firstAttribute="width" secondItem="iex-ZM-7Hy" secondAttribute="height" multiplier="343:26" constant="-1503.9230769230769" id="Bai-zH-axB"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -44,6 +33,17 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TGC-e6-uny">
+                                <rect key="frame" x="63" y="444" width="248" height="56"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="TGC-e6-uny" secondAttribute="height" multiplier="31:7" id="pKj-aE-o1l"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="保存">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -55,9 +55,9 @@
                             <constraint firstItem="FEN-cU-Wyy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="bK0-pG-yko"/>
                             <constraint firstItem="FEN-cU-Wyy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="56" id="dNP-W6-1Ok"/>
                             <constraint firstItem="TGC-e6-uny" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="63" id="kOX-S7-ReA"/>
-                            <constraint firstItem="TGC-e6-uny" firstAttribute="top" secondItem="iex-ZM-7Hy" secondAttribute="bottom" constant="108" id="py1-jT-iX9"/>
+                            <constraint firstItem="TGC-e6-uny" firstAttribute="top" secondItem="iex-ZM-7Hy" secondAttribute="bottom" constant="91" id="py1-jT-iX9"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iex-ZM-7Hy" secondAttribute="trailing" constant="16" id="rRn-TK-zRP"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TGC-e6-uny" secondAttribute="bottom" constant="344" id="teJ-u3-viQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TGC-e6-uny" secondAttribute="bottom" constant="278" id="teJ-u3-viQ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="メモ入力" id="vtX-88-73j"/>

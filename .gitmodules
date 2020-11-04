@@ -1,0 +1,4 @@
+[submodule "ios-training"]
+	path = ios-training
+	url = https://github.com/Markun1975/ios-training.git
+	branch = issue2/sugita_issue2
